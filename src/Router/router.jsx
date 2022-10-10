@@ -12,12 +12,17 @@ export const router = createBrowserRouter([
 				path: '/',
 				loader: () => fetch('https://openapi.programming-hero.com/api/quiz'),
 				element: <Topics />,
-			},
+            },
+            {
+                path: '/topics',
+                element: <Topics />,
+            },
 			{
 				path: '/questions/:id',
 				loader: ({ params }) => fetch(`https://openapi.programming-hero.com/api/quiz/${params.id}`),
 				element: <Quiz />,
-			},
+            },
+            
 		],
 	},
 ]);

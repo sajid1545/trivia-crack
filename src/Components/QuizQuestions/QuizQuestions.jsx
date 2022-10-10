@@ -6,12 +6,12 @@ const QuizQuestions = ({ questions }) => {
 
 	return (
 		<div className='max-w-[1200px]'>
-			<div className="card m-10  shadow-xl bg-gradient-to-r from-blue-700 via-blue-800 to-gray-900 ">
+			<div className="card m-10  shadow-xl bg-gradient-to-r from-gray-700 via-gray-900 to-black ">
 				<div className="card-body text-center ">
                     <p className='text-xl text-white font-bold'>{ question }</p>
                     <div className='grid grid-cols-2 gap-10 mt-4'>
                         {
-                            options.map((option,idx) => <QuizOptions key={idx} questions={ questions } option = {option} />)
+                            options.map((option,idx) => <QuizOptions key={idx} questions={ questions } option = {option}  />)
                         }
                     </div>
 				</div>

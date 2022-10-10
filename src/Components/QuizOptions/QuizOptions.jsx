@@ -15,9 +15,12 @@ const QuizOptions = ({ option, questions }) => {
 
 	return (
 		<div>
-			<button onClick={() => handleAnswer(option)} className="btn">
-				{option}
-			</button>
+			<div  onClick={() => handleAnswer(option)} className="bg-white p-5 rounded-lg font-bold cursor-pointer">
+				<div className='flex gap-4 items-center'>
+				<input type="radio" name="radio-3" className="radio radio-secondary"  />
+				<span>{option}</span>
+				</div>
+			</div>
 		</div>
 	);
 };

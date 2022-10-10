@@ -7,7 +7,7 @@ export const NavBar = () => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
 
 	return (
-		<div className="px-4 py-5 mx-auto  md:px-24 lg:px-8 bg-white border-2">
+		<div className="px-4 py-5 mx-auto  rounded-xl md:px-24 lg:px-8 bg-white  mb-8 shadow-lg shadow-purple-300">
 			<div className="relative flex items-center justify-between">
 				<a href="/" aria-label="Company" title="Company" className="inline-flex items-center">
 					<img src={logo} alt="" className="w-10 h-10" />
@@ -15,7 +15,7 @@ export const NavBar = () => {
 				</a>
 				<ul className="items-center hidden space-x-8 lg:flex text-lg font-semibold">
 					<li>
-						<NavLink to={`/`}>
+						<NavLink to={`/topics`}>
 							Topics
 						</NavLink>
 					</li>
