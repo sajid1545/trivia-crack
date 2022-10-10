@@ -6,8 +6,6 @@
 
 (https://ph-assignment-9-trivia-crack.netlify.app/ “Trivia Crack”)
 
-(/src/assets/project-overview.jpeg)
-
 1. This is a MCQ based Quiz..You will be given four options from which you have to choose/select the answer you think that is correct ✔✔
 
 2. You can select you anwers by two ways :
