@@ -34,7 +34,6 @@ const QuizQuestions = ({ questions }) => {
 
 	const handleCorrectAnswer = (selectedAnswer) => {
 		let answer = options.find((option) => option === correctAnswer);
-		console.log(answer);
 		Swal.fire({
 			icon: 'info',
 			text: `The is the correct Answer -  ${answer} ✅✅✅`,
@@ -46,7 +45,7 @@ const QuizQuestions = ({ questions }) => {
 		<div className="max-w-[1200px]">
 			<div className="card m-10  shadow-xl bg-gradient-to-t from-purple-900 to-purple-500 ">
 				<div className="card-body text-center ">
-					<div className="flex items-center">
+					<div className="flex items-center flex-col md:flex-row gap-3">
 						<p
 							className="text-xl text-white font-bold"
 							dangerouslySetInnerHTML={{ __html: question }}></p>

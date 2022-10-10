@@ -1,12 +1,6 @@
 import React from 'react';
 
-const QuizOptions = ({ option, questions,handleAnswer }) => {
-	// const { options, question, correctAnswer } = questions;
-
-
-
-
-
+const QuizOptions = ({ option, handleAnswer }) => {
 	return (
 		<div>
 			<div

@@ -4,7 +4,7 @@
 
 #
 
-(https://ph-assignment-5-trivia-crack.netlify.app/ “Trivia Crack”)
+(https://ph-assignment-9-trivia-crack.netlify.app/ “Trivia Crack”)
 
 1. This is a MCQ based Quiz..You will be given four options from which you have to choose/select the answer you think that is correct ✔✔
 
