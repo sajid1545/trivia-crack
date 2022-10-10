@@ -26,16 +26,16 @@ const ErrorPage = () => {
 					</svg>
 				</div>
 				<div class="text-center space-y-5">
-					<strong class="text-9xl font-black text-gray-200">{error.status}</strong>
+					<p class="font-extrabold text-8xl  text-white animate-bounce">{error.status}</p>
 
 					<h1 class="text-2xl font-bold tracking-tight text-white sm:text-4xl">
 						Page {error.statusText}
 					</h1>
 
-					<Link to="/" class="group relative inline-block focus:outline-none focus:ring">
+					<Link to="/" class="group relative inline-block focus:outline-none focus:ring ">
 						<span class="absolute inset-0 translate-x-0 translate-y-0 bg-red-600 transition-transform group-hover:translate-y-1.5 group-hover:translate-x-1.5"></span>
 
-						<span class="relative inline-block border-2 border-red-600 border-current px-8 py-3 text-sm font-bold uppercase tracking-widest">
+						<span class="relative inline-block border-2 border-red-600  px-8 py-3 text-sm font-bold uppercase tracking-widest">
 							Go Back to Topics
 						</span>
 					</Link>

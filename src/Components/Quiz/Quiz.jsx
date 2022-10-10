@@ -28,10 +28,11 @@ const Quiz = () => {
 						/>
 					))}
 				</div>
-				<div className='col-span-full lg:col-span-3 text-center bg-gradient-to-r from-purple-800 via-violet-900 to-purple-800 text-white rounded-2xl my-5 p-5 '>
-					<div className='sticky top-0 space-y-4 mt-5'>
-					<h1 className="text-4xl">Correct Answers : {correct}</h1>
-					<h1 className="text-4xl">Wrong Answers : { wrong }</h1>
+				<div className="col-span-full lg:col-span-3 text-center bg-gradient-to-r from-purple-800 via-violet-900 to-purple-800 text-white rounded-2xl my-5 p-5 ">
+					<div className="sticky top-0 space-y-4 mt-5">
+						<h1 className="text-5xl underline mb-10">Answers</h1>
+						<h1 className="text-2xl">Correct ✅ : {correct}</h1>
+						<h1 className="text-2xl">Wrong ❌ : {wrong}</h1>
 					</div>
 				</div>
 			</div>
