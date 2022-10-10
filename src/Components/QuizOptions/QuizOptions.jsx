@@ -5,7 +5,6 @@ const QuizOptions = ({ option, questions }) => {
 	const { options,question,correctAnswer,id } = questions;
 
     const handleAnswer = selectedAnswer => { 
-        console.log(selectedAnswer,options,correctAnswer);
         let answer = options.find(option => selectedAnswer === correctAnswer);
         if (answer) {
             alert('Congrats')
@@ -16,7 +15,7 @@ const QuizOptions = ({ option, questions }) => {
 
 
     return (
-        <div>
+        <div >
             <button onClick={()=>handleAnswer(option)} className='btn'>{option}</button>
         </div>
     );
