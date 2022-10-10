@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { useLoaderData } from 'react-router-dom';
+import { TopicContext } from '../../Layout/Main';
 import Header from '../Header/Header';
 import Topic from '../Topic/Topic';
 
 const Topics = () => {
-	const topics = useLoaderData().data;
+	const topics = useContext(TopicContext);
 
 	return (
 		<div>
