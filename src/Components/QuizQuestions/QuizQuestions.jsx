@@ -45,8 +45,8 @@ const QuizQuestions = ({ questions, setCorrect, correct, wrong, setWrong }) => {
 	};
 
 	return (
-		<div className="max-w-[1200px]">
-			<div className="card m-10  shadow-xl bg-gradient-to-t from-purple-900 to-purple-500 ">
+		<div className="max-w-[1200px] ">
+			<div className="card md:m-10 m-4  shadow-xl bg-gradient-to-t from-purple-900 to-purple-500 ">
 				<div className="card-body text-center ">
 					<div className="flex items-center flex-col md:flex-row gap-3">
 						<p

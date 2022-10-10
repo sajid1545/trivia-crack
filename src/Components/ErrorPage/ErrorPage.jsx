@@ -28,14 +28,16 @@ const ErrorPage = () => {
 				<div class="text-center space-y-5">
 					<strong class="text-9xl font-black text-gray-200">{error.status}</strong>
 
-					<h1 class="text-2xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-						{error.statusText}
+					<h1 class="text-2xl font-bold tracking-tight text-white sm:text-4xl">
+						Page {error.statusText}
 					</h1>
 
-					<Link
-						to="/"
-						class="mt-6 inline-block rounded bg-indigo-600 px-5 py-3 text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring">
-						Go Back to Topics
+					<Link to="/" class="group relative inline-block focus:outline-none focus:ring">
+						<span class="absolute inset-0 translate-x-0 translate-y-0 bg-red-600 transition-transform group-hover:translate-y-1.5 group-hover:translate-x-1.5"></span>
+
+						<span class="relative inline-block border-2 border-red-600 border-current px-8 py-3 text-sm font-bold uppercase tracking-widest">
+							Go Back to Topics
+						</span>
 					</Link>
 				</div>
 			</div>

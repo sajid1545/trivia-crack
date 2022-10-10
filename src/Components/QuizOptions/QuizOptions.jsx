@@ -7,7 +7,7 @@ const QuizOptions = ({ option, handleAnswer }) => {
 		<div>
 			<div
 				onClick={() => handleAnswer(option)}
-				className="bg-white p-5 rounded-lg font-bold cursor-pointer hover:bg-red-400  duration-500 ">
+				className="bg-white p-5 rounded-lg font-bold cursor-pointer hover:bg-red-400  duration-500">
 				<div className="flex gap-4 items-center">
 					<input
 						type="radio"
