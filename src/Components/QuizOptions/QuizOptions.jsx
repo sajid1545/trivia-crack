@@ -1,4 +1,5 @@
 import React from 'react';
+import { toast } from 'react-toastify';
 
 const QuizOptions = ({ option, questions }) => {
     
@@ -7,9 +8,10 @@ const QuizOptions = ({ option, questions }) => {
     const handleAnswer = selectedAnswer => { 
         let answer = options.find(option => selectedAnswer === correctAnswer);
         if (answer) {
-            alert('Congrats')
+            toast.success('Correct Answer', { autoClose: 500 })
         } else {
-            alert('No answer')
+            toast.error('Wrong Answer', { autoClose: 500 })
+
         }
     }
 
