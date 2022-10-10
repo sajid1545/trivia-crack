@@ -1,7 +1,7 @@
-import { useState } from "react";
-import { Link, NavLink } from "react-router-dom";
+import { useState } from 'react';
+import { Link, NavLink } from 'react-router-dom';
 import logo from '../../assets/quiz-logo.png';
-
+import './NavBar.css';
 
 export const NavBar = () => {
 	const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -9,28 +9,26 @@ export const NavBar = () => {
 	return (
 		<div className="px-4 py-5 mx-auto  rounded-xl md:px-24 lg:px-8 bg-white  mb-8 shadow-lg shadow-purple-300">
 			<div className="relative flex items-center justify-between">
-				<a href="/" aria-label="Company" title="Company" className="inline-flex items-center">
+				<Link to="/" aria-label="Company" title="Company" className="inline-flex items-center">
 					<img src={logo} alt="" className="w-10 h-10" />
-					<span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">Trivia Crack</span>
-				</a>
+					<span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
+						Trivia Crack
+					</span>
+				</Link>
 				<ul className="items-center hidden space-x-8 lg:flex text-lg font-semibold">
 					<li>
-						<NavLink to={`/topics`}>
-							Topics
-						</NavLink>
+						<NavLink to={`/topics`}>Topics</NavLink>
 					</li>
 					<li>
-						<NavLink to={`/`}>
+						<NavLink
+							className={({ isActive }) => (isActive ? 'active' : undefined)}
+							to={`/statistics`}>
 							Statistics
 						</NavLink>
 					</li>
 					<li>
-						<NavLink to={`/`}>
-							Blog
-						</NavLink>
+						<NavLink to={`/blogs`}>Blogs</NavLink>
 					</li>
-					
-					
 				</ul>
 				<div className="lg:hidden">
 					<button
@@ -58,29 +56,16 @@ export const NavBar = () => {
 							<div className="p-5 bg-white border rounded shadow-sm">
 								<div className="flex items-center justify-between mb-4">
 									<div>
-										<a
-											href="/"
+										<Link
+											to="/"
 											aria-label="Company"
 											title="Company"
 											className="inline-flex items-center">
-											<svg
-												className="w-8 text-deep-purple-accent-400"
-												viewBox="0 0 24 24"
-												strokeLinejoin="round"
-												strokeWidth="2"
-												strokeLinecap="round"
-												strokeMiterlimit="10"
-												stroke="currentColor"
-												fill="none">
-												<rect x="3" y="1" width="7" height="12" />
-												<rect x="3" y="17" width="7" height="6" />
-												<rect x="14" y="1" width="7" height="6" />
-												<rect x="14" y="11" width="7" height="12" />
-											</svg>
+											<img src={logo} alt="" className="w-10 h-10" />
 											<span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
-												Company
+												Trivia Crack
 											</span>
-										</a>
+										</Link>
 									</div>
 									<div>
 										<button
@@ -100,42 +85,18 @@ export const NavBar = () => {
 								<nav>
 									<ul className="space-y-4">
 										<li>
-											<a
-												href="/"
-												aria-label="Our product"
-												title="Our product"
-												className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">
-												Product
-											</a>
+											<NavLink to={`/topics`}>Topics</NavLink>
 										</li>
 										<li>
-											<a
-												href="/"
-												aria-label="Our product"
-												title="Our product"
-												className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">
-												Features
-											</a>
+											<NavLink
+												className={({ isActive }) => (isActive ? 'active' : undefined)}
+												to={`/statistics`}>
+												Statistics
+											</NavLink>
 										</li>
 										<li>
-											<a
-												href="/"
-												aria-label="Product pricing"
-												title="Product pricing"
-												className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">
-												Pricing
-											</a>
+											<NavLink to={`/blogs`}>Blogs</NavLink>
 										</li>
-										<li>
-											<a
-												href="/"
-												aria-label="About us"
-												title="About us"
-												className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">
-												About us
-											</a>
-										</li>
-										
 									</ul>
 								</nav>
 							</div>
