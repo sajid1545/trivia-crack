@@ -7,6 +7,7 @@ import Blog from './../Components/Blog/Blog';
 import ErrorPage from '../Components/ErrorPage/ErrorPage';
 
 export const router = createBrowserRouter([
+          
 	{
 		path: '/',
         element: <Main />,
@@ -37,4 +38,5 @@ export const router = createBrowserRouter([
 			},
 		],
 	},
+		
 ]);
