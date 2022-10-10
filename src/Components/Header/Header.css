@@ -1,5 +1,5 @@
 .trivia-section {
-    background-image: url(https://img.freepik.com/free-vector/happy-participants-playing-quiz-game-tv-show-host-with-microphone-asking-questions_74855-10770.jpg?w=900&t=st=1665421439~exp=1665422039~hmac=f58a67b4c30d1c121395abe13490f3d6a892ea8940df7d1fec034283c66dba1f);
+    background-image: url('/src/assets/10770.jpg');
     background-size: cover;
     background-position: center;
 }

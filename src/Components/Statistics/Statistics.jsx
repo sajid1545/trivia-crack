@@ -9,7 +9,7 @@ const Statistics = () => {
 	const topics = useContext(TopicContext);
 
 	return (
-        <div className='mt-[170px] md:mt-0'>
+        <div className='mt-[170px] lg:mt-0'>
             <h1 className='text-5xl text-center font-bold my-5 text-purple-800'>Statistics</h1>
 			<div className="grid grid-cols-1 lg:grid-cols-2 max-w-[1300px] mx-auto gap-5 ">
 				<ResponsiveContainer width={'99%'} height={300} className="mt-10">

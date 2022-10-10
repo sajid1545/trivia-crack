@@ -6,7 +6,7 @@ const QuizQuestions = ({ questions }) => {
 
 	return (
 		<div className="max-w-[1200px]">
-			<div className="card m-10  shadow-xl bg-gradient-to-r from-gray-700 via-gray-900 to-black ">
+			<div className="card m-10  shadow-xl bg-gradient-to-t from-purple-900 to-purple-500 ">
 				<div className="card-body text-center ">
 					<div>
 						<p
