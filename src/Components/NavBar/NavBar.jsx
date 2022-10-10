@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import logo from '../../assets/quiz-logo.png';
 
 
@@ -13,39 +13,23 @@ export const NavBar = () => {
 					<img src={logo} alt="" className="w-10 h-10" />
 					<span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">Trivia Crack</span>
 				</a>
-				<ul className="items-center hidden space-x-8 lg:flex">
+				<ul className="items-center hidden space-x-8 lg:flex text-lg font-semibold">
 					<li>
-						<Link to={`/`}>
+						<NavLink to={`/`}>
 							Topics
-						</Link>
+						</NavLink>
 					</li>
 					<li>
-						<a
-							href="/"
-							aria-label="Our product"
-							title="Our product"
-							className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">
-							Features
-						</a>
+						<NavLink to={`/`}>
+							Statistics
+						</NavLink>
 					</li>
 					<li>
-						<a
-							href="/"
-							aria-label="Product pricing"
-							title="Product pricing"
-							className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">
-							Pricing
-						</a>
+						<NavLink to={`/`}>
+							Blog
+						</NavLink>
 					</li>
-					<li>
-						<a
-							href="/"
-							aria-label="About us"
-							title="About us"
-							className="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400">
-							About us
-						</a>
-					</li>
+					
 					
 				</ul>
 				<div className="lg:hidden">
