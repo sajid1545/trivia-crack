@@ -1,11 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import QuizOptions from '../QuizOptions/QuizOptions';
 import { EyeIcon } from '@heroicons/react/24/solid';
 import { toast } from 'react-toastify';
 import Swal from 'sweetalert2/dist/sweetalert2.js';
 
-const QuizQuestions = ({ questions }) => {
+const QuizQuestions = ({ questions, setCorrect, correct, wrong, setWrong }) => {
 	const { options, question, correctAnswer } = questions;
+
+	
 
 	const handleAnswer = (selectedAnswer) => {
 		let answer = options.find((option) => selectedAnswer === correctAnswer);
@@ -19,6 +21,7 @@ const QuizQuestions = ({ questions }) => {
 				draggable: true,
 				theme: 'dark',
 			});
+			setCorrect(correct + 1);
 		} else {
 			toast.error('Incorrect ❌❌❌', {
 				position: 'top-center',
@@ -29,16 +32,16 @@ const QuizQuestions = ({ questions }) => {
 				draggable: true,
 				theme: 'dark',
 			});
+			setWrong(wrong + 1);
 		}
 	};
 
-	const handleCorrectAnswer = (selectedAnswer) => {
+	const handleCorrectAnswer = () => {
 		let answer = options.find((option) => option === correctAnswer);
 		Swal.fire({
 			icon: 'info',
 			text: `The is the correct Answer -  ${answer} ✅✅✅`,
-		  })
-
+		});
 	};
 
 	return (

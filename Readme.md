@@ -12,3 +12,5 @@
    1: By clicking the radion button. 2: Or by clicking the div or anwer box
 
 3. Packages,Frameworks,Component Libraries & language used in this projects are : React , React Router , Tailwind CSS, Daisy UI, Sweet alert2, Toastify and Recharts.
+
+4. User can see the theirs results, how many anwers were wrong and how many times answer were correct !!!

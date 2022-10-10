@@ -10,7 +10,7 @@ const Topic = ({ topic }) => {
 		<div className="">
 			<div className="card w-[95%] border-2 border-purple-900 hover:shadow-purple-300 duration-500  cursor-pointer mx-auto bg-base-100 shadow-xl">
 				<figure>
-					<img src={logo} alt="Shoes" className="bg-blue-100" />
+					<img src={logo} alt="Shoes" className="bg-purple-100 rounded-xl" />
 				</figure>
 				<div className="card-body">
 					<div className="">
