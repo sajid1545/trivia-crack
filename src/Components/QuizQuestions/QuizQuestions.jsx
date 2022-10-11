@@ -20,14 +20,14 @@ const QuizQuestions = ({
 		if (answer) {
 			toast.success('Correct Answer 👍👍👍', {
 				autoClose: 500,
-
+				toastId: 'success1',
 				theme: 'dark',
 			});
 			setCorrect(correct + 1);
 		} else {
 			toast.error('Incorrect ❌❌❌', {
 				autoClose: 500,
-
+				toastId: 'error1',
 				theme: 'dark',
 			});
 			setWrong(wrong + 1);
@@ -46,7 +46,9 @@ const QuizQuestions = ({
 		<div className="max-w-[1200px] ">
 			<div className="card md:m-10 m-4   bg-gradient-to-b from-slate-900 to-purple-900 shadow-xl shadow-purple-400 rounded-2xl ">
 				<div className="card-body text-center  ">
-					<span className="text-xl mb-4 font-extrabold text-[#ff4500] underline">Quiz {index + 1} </span>
+					<span className="text-xl mb-4 font-extrabold text-[#ff4500] underline">
+						Quiz {index + 1}{' '}
+					</span>
 					<div className="flex items-center flex-col md:flex-row gap-3">
 						<p
 							className="text-2xl text-white font-bold"
