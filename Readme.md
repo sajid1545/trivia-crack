@@ -8,8 +8,8 @@
 
 1. This is a MCQ based Quiz..You will be given four options from which you have to choose/select the answer you think that is correct ✔✔
 
-2. You can select you anwers by two ways :
-   1: By clicking the radion button. 2: Or by clicking the div or anwer box
+2. You can select your anwers in two ways :-
+   By clicking the radio button, or by clicking the div or answer box
 
 3. Packages,Frameworks,Component Libraries & language used in this projects are : React , React Router , Tailwind CSS, Daisy UI, Sweet alert2, Toastify and Recharts.
 
