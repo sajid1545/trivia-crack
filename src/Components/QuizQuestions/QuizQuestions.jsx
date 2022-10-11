@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
-import QuizOptions from '../QuizOptions/QuizOptions';
 import { EyeIcon } from '@heroicons/react/24/solid';
+import React from 'react';
 import { toast } from 'react-toastify';
 import Swal from 'sweetalert2/dist/sweetalert2.js';
+import QuizOptions from '../QuizOptions/QuizOptions';
 
 const QuizQuestions = ({ questions, setCorrect, correct, wrong, setWrong }) => {
 	const { options, question, correctAnswer } = questions;
@@ -30,7 +30,7 @@ const QuizQuestions = ({ questions, setCorrect, correct, wrong, setWrong }) => {
 		let answer = options.find((option) => option === correctAnswer);
 		Swal.fire({
 			icon: 'info',
-			text: `The is the correct Answer -  ${answer} ✅✅✅`,
+			text: `The correct Answer is -  ${answer} ✅✅✅`,
 		});
 	};
 
@@ -42,7 +42,8 @@ const QuizQuestions = ({ questions, setCorrect, correct, wrong, setWrong }) => {
 						<p
 							className="text-xl text-white font-bold"
 							dangerouslySetInnerHTML={{ __html: question }}></p>
-						<EyeIcon
+						<EyeIcon 
+							title='click to see the correct answer'
 							onClick={() => handleCorrectAnswer(options)}
 							className="h-6 w-6 text-white cursor-pointer"
 						/>
