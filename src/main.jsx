@@ -9,7 +9,7 @@ import Swal from 'sweetalert2'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
 	<React.StrictMode>
-		<ToastContainer position="top-center" />
 		<App />
+		<ToastContainer position="top-center" />
 	</React.StrictMode>
 );

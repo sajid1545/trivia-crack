@@ -20,14 +20,14 @@ const QuizQuestions = ({
 		if (answer) {
 			toast.success('Correct Answer 👍👍👍', {
 				autoClose: 500,
-				toastId: 'success1',
+				// toastId: 'success1',
 				theme: 'dark',
 			});
 			setCorrect(correct + 1);
 		} else {
 			toast.error('Incorrect ❌❌❌', {
 				autoClose: 500,
-				toastId: 'error1',
+				// toastId: 'error1',
 				theme: 'dark',
 			});
 			setWrong(wrong + 1);
