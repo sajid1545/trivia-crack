@@ -17,7 +17,7 @@ const Quiz = () => {
 			</h1>
 			<div className="grid grid-cols-12 ">
 				<div className="col-span-full lg:col-span-9">
-					{questions.map((question) => (
+					{questions.map((question,index) => (
 						<QuizQuestions
 							key={question.id}
 							questions={question}
@@ -26,6 +26,7 @@ const Quiz = () => {
 							wrong={wrong}
 							setWrong={setWrong}
 							questionsData={questionsData}
+							index={index}
 						/>
 					))}
 				</div>
