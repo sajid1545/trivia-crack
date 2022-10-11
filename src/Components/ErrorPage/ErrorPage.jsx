@@ -1,13 +1,12 @@
 import React from 'react';
 import { Link, useRouteError } from 'react-router-dom';
-import { ExclamationTriangleIcon } from '@heroicons/react/24/solid';
 
 const ErrorPage = () => {
 	const error = useRouteError();
 
 	return (
 		<div>
-			<div class="grid h-screen place-content-center bg-gradient-to-r from-slate-900 via-purple-900 to-slate-900">
+			<div className="grid h-screen place-content-center bg-gradient-to-r from-slate-900 via-purple-900 to-slate-900">
 				<div className="container flex flex-col items-center justify-center px-5 mx-auto my-8 space-y-8 text-center sm:max-w-md">
 					<svg
 						xmlns="http://www.w3.org/2000/svg"
@@ -25,17 +24,17 @@ const ErrorPage = () => {
 							points="383.958 182.63 360.042 161.37 338.671 185.412 314.63 164.042 293.37 187.958 317.412 209.329 296.042 233.37 319.958 254.63 341.329 230.588 365.37 251.958 386.63 228.042 362.588 206.671 383.958 182.63"></polygon>
 					</svg>
 				</div>
-				<div class="text-center space-y-5">
-					<p class="font-extrabold text-8xl  text-white animate-bounce">{error.status}</p>
+				<div className="text-center space-y-5">
+					<p className="font-extrabold text-8xl  text-white animate-bounce">{error.status}</p>
 
-					<h1 class="text-2xl font-bold tracking-tight text-white sm:text-4xl">
+					<h1 className="text-2xl font-bold tracking-tight text-white sm:text-4xl">
 						Page {error.statusText}
 					</h1>
 
-					<Link to="/" class="group relative inline-block focus:outline-none focus:ring ">
-						<span class="absolute inset-0 translate-x-0 translate-y-0 bg-red-600 transition-transform group-hover:translate-y-1.5 group-hover:translate-x-1.5"></span>
+					<Link to="/" className="group relative inline-block focus:outline-none focus:ring ">
+						<span className="absolute inset-0 translate-x-0 translate-y-0 bg-red-600 transition-transform group-hover:translate-y-1.5 group-hover:translate-x-1.5"></span>
 
-						<span class="relative inline-block border-2 border-red-600  px-8 py-3 text-sm font-bold uppercase tracking-widest">
+						<span className="relative inline-block border-2 border-red-600  px-8 py-3 text-sm font-bold uppercase tracking-widest">
 							Go Back to Topics
 						</span>
 					</Link>

@@ -6,6 +6,7 @@ const Quiz = () => {
 	const questionsData = useLoaderData().data;
 	const questions = useLoaderData().data.questions;
 
+
 	const [correct, setCorrect] = useState(0);
 	const [wrong, setWrong] = useState(0);
 
@@ -24,6 +25,7 @@ const Quiz = () => {
 							setCorrect={setCorrect}
 							wrong={wrong}
 							setWrong={setWrong}
+							questionsData={questionsData}
 						/>
 					))}
 				</div>
