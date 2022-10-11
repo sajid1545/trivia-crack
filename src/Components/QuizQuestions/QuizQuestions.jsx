@@ -36,13 +36,13 @@ const QuizQuestions = ({
 		let answer = options.find((option) => option === correctAnswer);
 		Swal.fire({
 			icon: 'info',
-			text: `The correct Answer is  - ✅   ${answer} ✅`,
+			text: `✅✅ The correct Answer is  -    ${answer} `,
 		});
 	};
 
 	return (
 		<div className="max-w-[1200px] ">
-			<div className="card md:m-10 m-4   bg-gradient-to-b from-slate-900 to-purple-900 shadow-xl shadow-purple-400 rounded-2xl ">
+			<div className="card md:m-10 m-4  p-0 md:p-8  bg-gradient-to-b from-slate-900 to-purple-900 shadow-xl shadow-purple-400 rounded-2xl ">
 				<div className="card-body text-center  ">
 					<span className="text-xl mb-4 font-extrabold text-[#ff4500] underline">
 						Quiz {index + 1}{' '}
