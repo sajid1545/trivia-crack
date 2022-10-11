@@ -9,7 +9,7 @@ export const NavBar = () => {
 	return (
 		<div className="px-4 py-5 mx-auto  rounded-xl md:px-24 lg:px-8 bg-white  mb-8 shadow-lg shadow-purple-300">
 			<div className="relative flex items-center justify-between">
-				<Link to="/" aria-label="Company" title="Company" className="inline-flex items-center">
+				<Link to="/"  className="inline-flex items-center">
 					<img src={logo} alt="" className="w-10 h-10" />
 					<span className="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
 						Trivia Crack
