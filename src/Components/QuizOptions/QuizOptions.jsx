@@ -8,7 +8,7 @@ const QuizOptions = ({ option, handleAnswer }) => {
 					<input
 						type="radio"
 						name="radio-3"
-						className="radio radio-primary  hidden sm:inline-block"
+						className="radio radio-primary "
 					/>
 				</div>
 				<p className="font-bold text-lg ">{option}</p>
