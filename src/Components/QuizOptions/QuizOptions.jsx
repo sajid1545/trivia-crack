@@ -1,14 +1,12 @@
 import React from 'react';
 
 const QuizOptions = ({ option, handleAnswer }) => {
-
-
 	return (
 		<div>
 			<div
 				onClick={() => handleAnswer(option)}
-				className="bg-white p-5 rounded-lg font-bold cursor-pointer hover:bg-red-400  duration-500">
-				<div className="flex gap-4 items-center">
+				className="bg-white p-5 rounded-xl font-bold cursor-pointer duration-500 hover:bg-gradient-to-bl from-slate-900 via-purple-900 to-slate-900 hover:text-white ">
+				<div className="flex gap-4 items-center  ">
 					<input
 						type="radio"
 						name="radio-3"

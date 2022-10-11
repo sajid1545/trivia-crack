@@ -8,7 +8,7 @@ const Topic = ({ topic }) => {
 
 	return (
 		<div className="">
-			<div className="card w-[95%] border-2 border-purple-900 hover:shadow-purple-500 duration-500  cursor-pointer mx-auto bg-slate-800 shadow-xl">
+			<div className="card w-[95%] border-4 border-slate-600 hover:shadow-purple-500 duration-500  cursor-pointer mx-auto bg-slate-800 shadow-xl">
 				<figure>
 					<img src={logo} alt="Shoes" className="bg-purple-100 rounded-xl" />
 				</figure>
@@ -21,7 +21,7 @@ const Topic = ({ topic }) => {
 					</div>
 					<div className="card-actions block mx-auto">
 						<Link to={`/questions/${id}`}>
-							<button className="py-3 px-8 rounded-xl mt-5 bg-purple-700 border-0 text-white  hover:bg-purple-500 duration-500">
+							<button className="py-3 px-8 rounded-xl mt-5 bg-purple-500 border-0 text-white  hover:bg-purple-800 duration-500">
 								<div className="flex items-center gap-4 px-4">
 									<span>Take Quiz</span>
 									<ArrowLongRightIcon className="w-6 h-7" />

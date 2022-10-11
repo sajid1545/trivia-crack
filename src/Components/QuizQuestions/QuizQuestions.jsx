@@ -7,29 +7,19 @@ import Swal from 'sweetalert2/dist/sweetalert2.js';
 const QuizQuestions = ({ questions, setCorrect, correct, wrong, setWrong }) => {
 	const { options, question, correctAnswer } = questions;
 
-	
-
 	const handleAnswer = (selectedAnswer) => {
 		let answer = options.find((option) => selectedAnswer === correctAnswer);
 		if (answer) {
 			toast.success('Correct Answer 👍👍👍', {
-				position: 'top-center',
 				autoClose: 500,
-				hideProgressBar: false,
-				closeOnClick: true,
-				pauseOnHover: true,
-				draggable: true,
+
 				theme: 'dark',
 			});
 			setCorrect(correct + 1);
 		} else {
 			toast.error('Incorrect ❌❌❌', {
-				position: 'top-center',
 				autoClose: 500,
-				hideProgressBar: false,
-				closeOnClick: true,
-				pauseOnHover: true,
-				draggable: true,
+
 				theme: 'dark',
 			});
 			setWrong(wrong + 1);
@@ -59,12 +49,7 @@ const QuizQuestions = ({ questions, setCorrect, correct, wrong, setWrong }) => {
 					</div>
 					<div className="grid grid-cols-1 lg:grid-cols-2 gap-10 mt-4">
 						{options.map((option, idx) => (
-							<QuizOptions
-								key={idx}
-								questions={questions}
-								option={option}
-								handleAnswer={handleAnswer}
-							/>
+							<QuizOptions key={idx} option={option} handleAnswer={handleAnswer} />
 						))}
 					</div>
 				</div>

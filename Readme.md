@@ -13,7 +13,7 @@
 
 3. Packages,Frameworks,Component Libraries & language used in this projects are : React , React Router , Tailwind CSS, Daisy UI, Sweet alert2, Toastify and Recharts.
 
-4. User can see the theirs results, how many anwers were wrong and how many times answer were correct !!!
+4. User can see the theirs results, how many time they got wrong answers and how many times the answers were correct !!!
 
 ##
 
