@@ -10,8 +10,8 @@ const QuizOptions = ({ option, handleAnswer }) => {
 						name="radio-3"
 						className="radio radio-primary  hidden sm:inline-block"
 					/>
-					<span>{option}</span>
 				</div>
+				<p className="font-bold text-lg ">{option}</p>
 			</label>
 		</div>
 	);
